@@ -37,5 +37,16 @@ public class Main {
         contexte.execute();
         contexte.setStrategy(new ConcreteStrategyB());
         contexte.execute();
+
+        // Singleton
+        CompteBancaire compte1 = new CompteBancaire(45465834);
+        compte1.deposerArgent(100);
+        compte1.retirerArgent(50);
+
+        CompteBancaire compte2 = new CompteBancaire(13523412);
+        compte2.deposerArgent(125);
+        compte2.retirerArgent(200);
+
+        System.out.println(Journalisation.getInstance().afficherLog());
     }
 }
