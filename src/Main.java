@@ -6,11 +6,11 @@ public class Main {
         document1.setContenu("Hello HTML");
         document1.dessine();
 
-        System.out.println("----------------------------");
-
         document2 = new DocumentPDF();
         document2.setContenu("Hello PDF");
         document2.dessine();
+
+        System.out.println("\n----------------------------\n");
 
         // Gestion des répertoires
         Retrait retrait = new Retrait();
@@ -32,11 +32,15 @@ public class Main {
         repertoire3.ajouter(fichier5);
         repertoire3.afficher();
 
+        System.out.println("\n----------------------------\n");
+
         // Stratégies
         Context contexte = new Context();
         contexte.execute();
         contexte.setStrategy(new ConcreteStrategyB());
         contexte.execute();
+
+        System.out.println("\n----------------------------\n");
 
         // Singleton
         CompteBancaire compte1 = new CompteBancaire(45465834);
