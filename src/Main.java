@@ -31,5 +31,11 @@ public class Main {
         repertoire3.ajouter(repertoire2);
         repertoire3.ajouter(fichier5);
         repertoire3.afficher();
+
+        // Stratégies
+        Context contexte = new Context();
+        contexte.execute();
+        contexte.setStrategy(new ConcreteStrategyB());
+        contexte.execute();
     }
 }
