@@ -1,3 +1,3 @@
 public interface AbstractFile {
-    public void afficher();
+    void afficher();
 }

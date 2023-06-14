@@ -3,8 +3,8 @@ import java.util.NoSuchElementException;
 
 public class Fichier implements AbstractFile
 {
-    private String nom;
-    private Retrait retrait;
+    private final String nom;
+    private final Retrait retrait;
     public Fichier(String nom, Retrait retrait) {
         this.nom = nom;
         this.retrait = retrait;

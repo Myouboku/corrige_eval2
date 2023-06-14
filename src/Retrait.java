@@ -1,5 +1,5 @@
 public class Retrait {
-    private StringBuffer SBRetrait = new StringBuffer();
+    private final StringBuffer SBRetrait = new StringBuffer();
     public String getRetrait() {
         return SBRetrait.toString();
     }

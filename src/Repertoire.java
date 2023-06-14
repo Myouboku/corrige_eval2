@@ -2,9 +2,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Repertoire implements AbstractFile {
-    private String nom;
-    private ArrayList<AbstractFile> fichiers = new ArrayList<>();
-    private Retrait retrait;
+    private final String nom;
+    private final ArrayList<AbstractFile> fichiers = new ArrayList<>();
+    private final Retrait retrait;
 
     public Repertoire(String nom, Retrait retrait) {
         this.nom = nom;
